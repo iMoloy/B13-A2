@@ -2,3 +2,6 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+.banner {
+  background-image: url("./images/hero-bg.png");
+}

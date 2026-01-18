@@ -21,25 +21,65 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[#1a0b2e]">
+  <body class="bg-[#1a0b2e] text-white">
     <!-- Navbar Start -->
-    <nav class="navbar flex justify-between items-center max-w-7xl m-auto">
-      <h1 class="text-3xl font-extrabold text-white py-5">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto">
+      <h1 class="text-3xl font-extrabold py-5">
         Tech<span
           class="bg-[linear-gradient(15deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] bg-clip-text text-transparent"
           >Wave</span
         >
       </h1>
-      <div class="text-base text-white flex gap-x-8">
+      <div class="text-base flex gap-x-8">
         <a href="#">About</a>
         <a href="#">Episodes</a>
         <a href="#">Host</a>
       </div>
       <button
-        class="cursor-pointer text-base text-white px-3 py-2 rounded-3xl bg-[linear-gradient(15deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] hover:bg-[linear-gradient(90deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))]"
+        class="cursor-pointer text-base px-3 py-2 rounded-3xl bg-[linear-gradient(15deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] hover:bg-[linear-gradient(120deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))]"
       >
         Subscribe <i class="fa-solid fa-arrow-right"></i>
       </button>
     </nav>
+    <!-- Banner Start -->
+    <section
+      class="banner bg-no-repeat w-full bg-cover h-full justify-between items-center max-w-7xl m-auto"
+    >
+      <div class="relative pt-11 mb-10">
+        <img
+          src="./images/hero-circle.png"
+          alt="Banner"
+          class="mx-auto block"
+        />
+        <img
+          src="./images/microphone.png"
+          alt="Banner"
+          class="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
+        />
+        <button
+          class="absolute top-1/4 right-3/8 bg-emerald-400 py-2 px-4 rounded-full border-none"
+        >
+          New
+        </button>
+      </div>
+      <h1 class="text-6xl text-center font-bold mb-2">TechWave</h1>
+      <p class="text-base text-center mb-6">
+        Your daily dose of tech insights, productivity hacks, and personal
+        growth
+      </p>
+      <div class="flex items-center justify-center gap-4">
+        <button
+          class="flex gap-2 cursor-pointer px-6 py-3 text-lg font-semibold rounded-3xl bg-[linear-gradient(15deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] hover:bg-[linear-gradient(120deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))]"
+        >
+          <img src="./images/spotify.png" alt="icons" class="p-1" />Listen on
+          Spotify
+        </button>
+        <button
+          class="flex gap-2 cursor-pointer px-6 py-3 text-lg font-semibold rounded-3xl border-1 border-emerald-400 text-emerald-400 hover:bg-[linear-gradient(120deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] hover:border-white"
+        >
+          <img src="./images/message.png" alt="icons" class="p-1" />Subscribe
+        </button>
+      </div>
+    </section>
   </body>
 </html>
