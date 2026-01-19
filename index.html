@@ -24,23 +24,30 @@
 
   <body class="bg-[#1a0b2e] text-white">
     <!-- Navbar Start -->
-    <nav class="flex justify-between items-center max-w-7xl mx-auto">
-      <h1 class="text-3xl font-extrabold py-5">
+    <nav
+      class="flex justify-between items-center max-w-7xl my-0 mx-auto px-4 sm:px-6 lg:px-8"
+    >
+      <h1 class="text-2xl sm:text-3xl font-extrabold py-5">
         Tech<span
           class="bg-[linear-gradient(15deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] bg-clip-text text-transparent"
           >Wave</span
         >
       </h1>
-      <div class="text-base flex gap-x-8">
+      <div class="text-base hidden md:flex gap-x-8">
         <a href="#">About</a>
         <a href="#">Episodes</a>
         <a href="#">Host</a>
       </div>
       <button
-        class="cursor-pointer text-base px-3 py-2 rounded-3xl bg-[linear-gradient(15deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] hover:bg-[linear-gradient(120deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))]"
+        class="cursor-pointer hidden md:block bg-white text-black px-5 py-2 rounded-full bg-[linear-gradient(15deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] hover:bg-[linear-gradient(120deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))]"
       >
-        Subscribe <i class="fa-solid fa-arrow-right"></i>
+        Subscribe <i class="lg:fa-solid fa-arrow-right sm:hidden"></i>
       </button>
+      <img
+        src="./images/hamburger-menu.png"
+        alt="menu"
+        class="block md:hidden w-6 h-6"
+      />
     </nav>
     <hr class="border-slate-600" />
     <!-- Banner Start -->
@@ -77,14 +84,14 @@
           Spotify
         </button>
         <button
-          class="flex gap-2 cursor-pointer px-6 py-3 text-lg font-semibold rounded-3xl border-1 border-emerald-400 text-emerald-400 hover:bg-[linear-gradient(120deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] hover:border-white"
+          class="flex gap-2 cursor-pointer px-6 py-3 text-lg font-semibold rounded-3xl border border-emerald-400 text-emerald-400 hover:bg-[linear-gradient(120deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] hover:border-white"
         >
           <img src="./images/message.png" alt="icons" class="p-1" />Subscribe
         </button>
       </div>
     </section>
     <!-- About Start -->
-    <section class="max-w-7xl mx-auto">
+    <section class="max-w-7xl my-0 mx-auto">
       <h2 class="text-center text-5xl font-bold mt-16">About the Podcast</h2>
       <p class="text-center leading-5 mt-5">
         <span class="mt-1 block"
@@ -105,32 +112,32 @@
       <div class="flex pt-16 items-center justify-around mb-16">
         <div class="">
           <h1 class="text-center text-5xl text-emerald-400 font-bold">150K+</h1>
-          <h3 class="text-center text-base text-white font uppercase">
+          <h3 class="text-center text-base text-white font-normal uppercase">
             Monthly Listeners
           </h3>
         </div>
         <div class="">
           <h1 class="text-center text-5xl text-emerald-400 font-bold">200+</h1>
-          <h3 class="text-center text-base text-white font uppercase">
+          <h3 class="text-center text-base text-white font-normal uppercase">
             Episodes Published
           </h3>
         </div>
         <div class="">
           <h1 class="text-center text-5xl text-emerald-400 font-bold">4.9★</h1>
-          <h3 class="text-center text-base text-white font uppercase">
+          <h3 class="text-center text-base text-white font-normal uppercase">
             Average Rating
           </h3>
         </div>
         <div class="">
           <h1 class="text-center text-5xl text-emerald-400 font-bold">50+</h1>
-          <h3 class="text-center text-base text-white font uppercase">
+          <h3 class="text-center text-base text-white font-normal uppercase">
             Industry Experts
           </h3>
         </div>
       </div>
     </section>
     <!-- Grid Start -->
-    <section class="max-w-7xl mx-auto mb-[120px]">
+    <section class="max-w-7xl my-0 mx-auto mb-[120px]">
       <h1 class="text-center text-5xl font-bold mt-[120px] mb-12 text-white">
         Why Choose TechWave
       </h1>
@@ -188,7 +195,7 @@
       </div>
     </section>
     <!-- Featured Start -->
-    <section class="max-w-7xl mx-auto mb-[120px]">
+    <section class="max-w-7xl my-0 mx-auto mb-[120px]">
       <h2 class="text-center font-bold text-5xl mb-10">Featured Episodes</h2>
       <div class="flex items-center justify-center gap-8">
         <div class="w-[380px] bg-[#2a1450] rounded-2xl">
@@ -299,7 +306,7 @@
       </div>
     </section>
     <!-- Host Start -->
-    <section class="max-w-7xl mx-auto mb-[120px]">
+    <section class="max-w-7xl my-0 mx-auto mb-[120px]">
       <h1 class="text-center font-bold text-5xl mb-10">Meet the Host</h1>
       <div
         class="flex items-center justify-center gap-8 rounded-3xl p-10 bg-[#2a1450]"
@@ -333,7 +340,7 @@
     </section>
     <!-- Footer Start -->
     <footer
-      class="footer w-full bg-center h-full justify-between items-center m-auto py-28"
+      class="footer w-full bg-center justify-between items-center mx-auto py-28 sm:w-full"
     >
       <h1 class="text-6xl font-extrabold py-5 text-center">
         Tech<span
